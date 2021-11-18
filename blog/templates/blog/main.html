@@ -1,5 +1,39 @@
 <html>
+<head>
+<title>{{title}}</title>
+{% load static %}
+<link rel = "stylesheet" type = "text/css" href="{% static 'blog/index.css' %}">
+</head>
 <body>
-	<p>test</p>
+	<div id = "right">
+		<div class="profile">
+			<p class = "profile-title"><b>NAVBAR</b></p> 
+				<ul id = "navbar">
+				<a href= "index.php"><li>home</li></a>
+				<hr>
+				<a href = "aboutme.php"><li>about me</li></a>
+				<hr>
+				<a href = "blog.html"><li>blog</li></a>
+				</ul>
+		</div>
+	</div>
+	{% block content %}{% endblock %}
+	<div id = "left">
+		<div class = "profile">
+			<p class = "profile-title">m0nad</p>
+			<img class = "ppic" src="/media/me.jpg" align="center">
+			<hr>
+			<div id = "her-textbox">
+			{% for i in file %}
+			<p>
+				{% for j in i %}
+					{% if j == '[' %}<b>{% endif %}
+					{{j}}
+					{% if j == ']' %}</b>{% endif %}
+				{% endfor %}
+			</p>
+			{% endfor %}
+		</div>
+	</div>
 </body>
 </html>

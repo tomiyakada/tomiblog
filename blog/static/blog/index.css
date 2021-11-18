@@ -1,0 +1,127 @@
+:root
+{
+	--theme: cyan;
+	--theme-bg: rgba(0,255,255,0.1);
+}
+
+body::-webkit-scrollbar{display: none;}
+
+body
+{
+	background-color: black;
+	color: var(--theme);
+	font-family: "Courier New", monospace;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+#left
+{
+	width: 25%;
+	float: left;
+}
+
+#right
+{
+	width: 25%;
+	float: right;
+}
+
+#center
+{
+	width: 50%;
+	float: left;
+}
+
+.profile
+{
+	text-align: center;
+	background: var(--theme-bg);
+}
+
+.article
+{
+	margin: 5%;
+	border: 1px var(--theme) solid;
+	background: var(--theme-bg); 
+}
+
+.article-header
+{
+	text-align: center;
+	padding: 5px;
+	margin: 0px;
+	border-bottom: 1px var(--theme) solid;
+}
+
+.article-body
+{
+	font-size: 12px;
+	margin: 20px;
+}
+
+p
+{
+	margin: 5px;
+}
+
+.profile
+{
+	margin: 10%;
+	border: 1px var(--theme) solid;
+}
+
+.profile-title
+{
+	border-bottom: 1px var(--theme) solid;
+	margin: 0px;
+	padding: 5px;
+}
+
+hr
+{
+	padding: 0px;
+	margin: 0px;
+	color: var(--theme);
+	opacity: 0.5;
+}
+.ppic
+{
+	align: center;
+	width: 70%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	border: 3px var(--theme) double;
+}
+
+#her-textbox p
+{
+	text-align: left;
+	font-size: 12px;
+}
+
+#navbar
+{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#navbar li
+{
+	padding: 5px;
+}
+
+#navbar li:hover
+{
+	background-color: rgba(0,255,255,0.5);
+	cursor: pointer;
+}
+
+a
+{
+	color: var(--theme);
+	text-decoration: none;
+}
+
+
