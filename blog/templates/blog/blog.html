@@ -1,0 +1,16 @@
+{% extends "blog/main.html" %}
+
+{% block content%}
+
+<div id = "center">
+	{%for i in articles%}
+		<div class = "article">
+			<p class = "article-header">{{i.title}} - {{i.date}}</p>
+			<div class = "article-body">
+				<p>{{i.content|linebreaks}}</p>
+			</div>
+		</div>
+	{% endfor %}
+</div>
+
+{% endblock content %}
